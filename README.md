@@ -8,7 +8,7 @@ The repository holds my attempt at solving this problem.
 
 ## Screenshot
 
-<img src="https://github.com/drewnoakes/QuadrilateralFinder/raw/master/screenshot.png" width="627" height="683" />
+<img src="https://raw.github.com/drewnoakes/quadrilateral-finder/master/screenshot.png" width="627" height="683" />
 
 ## License
 
