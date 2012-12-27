@@ -59,7 +59,7 @@ namespace DrewNoakes.QuadrilateralFinder
 
         private static void Main()
         {
-            Console.Out.WriteLine(string.Join(",", Enumerable.Range(0, 3).Permutations().Select(c=>string.Format("{{{0}}}", string.Join(",", c)))));
+            Console.Out.WriteLine(string.Join(",", Enumerable.Range(0, 3).Permutations().Select(c => string.Format("{{{0}}}", string.Join(",", c)))));
             var stopWatch = Stopwatch.StartNew();
 
             var intersections = QuadrilateralFinder.FindQuadrilateral(_sampleLineSegments);
@@ -72,7 +72,7 @@ namespace DrewNoakes.QuadrilateralFinder
         private static void Render(IEnumerable<LineSegment2> allLineSegments, Intersection[] intersections)
         {
             var allPoints = allLineSegments.SelectMany(l => new[] { l.End1, l.End2 }).Concat(intersections.Select(i => i.Point)).ToList();
-            
+
             var width = (int)Math.Ceiling(allPoints.Max(p => p.X));
             var height = (int)Math.Ceiling(allPoints.Max(p => p.Y));
 

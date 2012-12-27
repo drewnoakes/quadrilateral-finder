@@ -7,8 +7,8 @@
     <ProjectGuid>{7F37B3A6-7CA8-42E4-8831-DC5D30E6A607}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DrewNoakes.EquilateralFinder</RootNamespace>
-    <AssemblyName>DrewNoakes.EquilateralFinder</AssemblyName>
+    <RootNamespace>DrewNoakes.QuadrilateralFinder</RootNamespace>
+    <AssemblyName>DrewNoakes.QuadrilateralFinder</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -52,7 +52,13 @@
     <Compile Include="Vector2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="example image.jpg" />
+    <Content Include="License-GPL.txt" />
+    <Content Include="License-LGPL.txt" />
+    <Content Include="screenshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

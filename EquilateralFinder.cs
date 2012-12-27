@@ -96,7 +96,7 @@ namespace DrewNoakes.QuadrilateralFinder
 
             // Sum of squared errors
             const double piOnTwo = Math.PI/2;
-            var angleError = Enumerable.Sum(angles, angle => Math.Pow(piOnTwo - Math.Abs(angle), 2));
+            var angleError = angles.Sum(angle => Math.Pow(piOnTwo - Math.Abs(angle), 2));
 
             return angleError + distanceError;
         }
