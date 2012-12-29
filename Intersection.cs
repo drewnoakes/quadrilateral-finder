@@ -8,7 +8,7 @@
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * TinMan is distributed in the hope that it will be useful,
+ * QuadrilateralFinder is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
@@ -23,13 +23,25 @@
 
 namespace DrewNoakes.QuadrilateralFinder
 {
+    /// <summary>
+    /// Models the intersection of two <see cref="LineSegment2"/> instances.
+    /// </summary>
     public struct Intersection
     {
         public LineSegment2 Line1 { get; private set; }
         public LineSegment2 Line2 { get; private set; }
+
+        /// <summary>
+        /// The point at which the lines intersect. Will be (0,0) if <see cref="HasIntersection"/> is <c>false</c>.
+        /// </summary>
         public Vector2 Point { get; private set; }
+
         public double Distance1 { get; private set; }
         public double Distance2 { get; private set; }
+
+        /// <summary>
+        /// Will be <c>false</c> if the line segments are parallel.
+        /// </summary>
         public bool HasIntersection { get; private set; }
 
         public Intersection(LineSegment2 line1, LineSegment2 line2) : this()

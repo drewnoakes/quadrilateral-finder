@@ -8,7 +8,7 @@
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * TinMan is distributed in the hope that it will be useful,
+ * QuadrilateralFinder is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
@@ -29,6 +29,13 @@ namespace DrewNoakes.QuadrilateralFinder
 {
     public static class QuadrilateralFinder
     {
+        /// <summary>
+        /// Detects the most likely quadrilateral shape formed by four line segments from <paramref name="lineSegments"/>.
+        /// Possible solutions are evaluated based upon the closeness of corner angles to 90°, and penalties are assigned
+        /// if line segments would intersect within their spans.
+        /// </summary>
+        /// <param name="lineSegments"></param>
+        /// <returns>The intersection points that form the found quadrilateral.</returns>
         public static Intersection[] FindQuadrilateral(IEnumerable<LineSegment2> lineSegments)
         {
             var smallestError = Double.MaxValue;

@@ -8,7 +8,7 @@
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * TinMan is distributed in the hope that it will be useful,
+ * QuadrilateralFinder is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
@@ -25,6 +25,9 @@ using System;
 
 namespace DrewNoakes.QuadrilateralFinder
 {
+    /// <summary>
+    /// A basic two dimensional vector.
+    /// </summary>
     public struct Vector2
     {
         public double X { get; private set; }
